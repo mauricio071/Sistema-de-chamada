@@ -18,7 +18,7 @@ class AreaDoAluno : AppCompatActivity() {
 
         // Atualizando a tela
         val txtNome: TextView = findViewById(R.id.raAluno)
-        txtNome.text = "RA: $sNome"
+        txtNome.text = "RGM: $sNome"
 
         val btnDeslogar: Button = findViewById(R.id.btnDeslogar)
         btnDeslogar.setOnClickListener {

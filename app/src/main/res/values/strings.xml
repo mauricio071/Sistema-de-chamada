@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">UNICID - Chamada</string>
-    <string name="txtTelaLogin">Para logar, utilize seu RA e senha</string>
-    <string name="txtRA">Informe o seu RA:</string>
+    <string name="txtTelaLogin">Para logar, utilize seu RGM e senha</string>
+    <string name="txtRA">Informe o seu RGM:</string>
     <string name="txtSenha">Informe a sua senha: </string>
     <string name="btnConectar">LOGAR</string>
 
