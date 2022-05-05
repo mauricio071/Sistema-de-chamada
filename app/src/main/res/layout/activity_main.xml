@@ -18,76 +18,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="@string/txtTelaLogin"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:text="@string/txtTelaLogin" />
 
-    <TextView
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtRA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txtRA" />
-
-    <EditText
-        android:id="@+id/edtRA"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLength="8"
-        android:hint="@string/txtRA"
-        android:inputType="number" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:startIconDrawable="@drawable/pessoa1"
+        android:hint="@string/txtRA">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtRA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="8"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/txtRA"-->
-<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginEnd="16dp"-->
-<!--        android:layout_marginBottom="10dp"-->
-<!--        android:hint="@string/txtRA"-->
-
-<!--        app:startIconDrawable="@drawable/pessoa1">-->
-
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:id="@+id/edtRA"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content" />-->
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/txtSenha"-->
-<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginEnd="16dp"-->
-<!--        android:layout_marginBottom="10dp"-->
-<!--        android:hint="@string/txtSenha"-->
-<!--        app:endIconMode="password_toggle"-->
-<!--        app:startIconDrawable="@drawable/senha">-->
-
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:id="@+id/edtSenha"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:inputType="textPassword" />-->
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
-
-    <TextView
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txtSenha" />
-
-    <EditText
-        android:id="@+id/edtSenha"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/txtSenha" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:startIconDrawable="@drawable/senha"
+        app:endIconMode="password_toggle"
+        android:hint="@string/txtSenha">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSenha"
+            android:maxLength="40"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnConectar"

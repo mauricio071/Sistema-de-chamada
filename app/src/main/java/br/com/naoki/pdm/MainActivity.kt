@@ -8,7 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
-    private var arrayRgm = arrayOf("00000000")
+    private var arrayRgm = arrayOf("12345678", "20625308", "20613385", "20691564", "22255451")
     private var arrayPassword = arrayOf("123")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,21 +22,43 @@ class MainActivity : AppCompatActivity() {
             val sRA = edtRA.text.toString()
             val sSenha = edtSenha.text.toString()
 
-            if(sRA == arrayRgm[0] && sSenha == arrayPassword[0]){
-                Toast.makeText(applicationContext, "Login realizado com sucesso!", Toast.LENGTH_LONG).show()
-                // criar intent
-                val telaAreaDoAluno = Intent(this, AreaDoAluno::class.java)
+            // Limitador para while
+            var contRgm = 0
 
-                // Passando parâmetros para a segunda tela
-                val parametros = Bundle()
-                parametros.putString("ra", "$sRA")
-                telaAreaDoAluno.putExtras(parametros)
+            // Loop para verificar os dados de logins no array
+            while(contRgm < arrayRgm.size) {
+                // Verificar se o rgm e a senha estão no array salvo
+                if(sRA == arrayRgm[contRgm] && sSenha == arrayPassword[0]){
+                    Toast.makeText(applicationContext, "Login realizado com sucesso!", Toast.LENGTH_LONG).show()
+                    // Criar Intent
+                    val telaAreaDoAluno = Intent(this, AreaDoAluno::class.java)
 
-                // Limpar os campos
-                limpaCampos()
+                    // Passando parâmetros para a segunda tela
+                    val parametros = Bundle()
+                    parametros.putString("ra", "$sRA")
+                    telaAreaDoAluno.putExtras(parametros)
 
-                // fazer a chamada
-                startActivity(telaAreaDoAluno)
+                    // Limpar os campos
+                    limpaCampos()
+
+                    // Fazer a chamada
+                    startActivity(telaAreaDoAluno)
+
+                    // Parar a verificação
+                    break
+                }
+                else{
+                    limpaCampos()
+
+                    // Mostrar mensagem de erro caso não digitar o RGM ou senha corretos
+                    if(arrayRgm.indexOf(sRA) == -1 || sSenha != arrayPassword[0]){
+                        Toast.makeText(applicationContext, "Login incorreto", Toast.LENGTH_SHORT).show()
+                        break
+                    }
+
+                    // Aumentar uma contagem para loop de verificação
+                    contRgm += 1
+                }
             }
         }
     }
