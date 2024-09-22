@@ -1,26 +1,32 @@
-<div align="center">
-  <h1>Sistema de chamada</h1>
-</div>
+<div align="center"> <h1>Sistema de Chamada</h1> </div>
+
 
 ![Preview-Screens](https://github.com/mauricio071/sistema-de-chamada/blob/master/sistema-chamada.png)
 
 ## 📝 Sobre o projeto
 
-É uma aplicação mobile para controle de presença em aulas. Após o login com RA e senha, a aplicação mostra os dados do aluno, como nome, RA e localização atual. Com base nesses dados, verifica se há aula e, se estiver dentro do horário e localização corretos, permite registrar a presença.
+Esta é uma aplicação mobile desenvolvida para controle de presença em aulas. Após o login com RA e senha, o aplicativo exibe informações do aluno, como nome, RA e localização atual. A partir desses dados, a aplicação verifica se há uma aula no horário e local corretos e, caso positivo, permite o registro da presença.
 
-## 🛠 Tecnologias
-Tecnologias utilizadas neste projeto:
+## 🛠 Tecnologias utilizadas
+Tecnologias utilizadas neste projeto incluem:
 
--   **Android**
--   **Kotlin**
--   **Sqlite**
+-   **Android** - Sistema operacional para dispositivos móveis
+-   **Kotlin** - Linguagem de programação para o desenvolvimento Android
+-   **Sqlite** - Banco de dados local leve para armazenar informações no dispositivo
   
-## 📁 Instalação do projeto
+## 🖥️ Como configurar o projeto
+Siga os passos abaixo para configurar e executar o projeto em seu ambiente local:
 
-Para instalar e executar o projeto, basta clonar este repositório na sua máquina e executar no Android Studio.
-
-Clonando o Repositório
+### 1. Clone o repositório:
 
 ```bash
 $ git clone https://github.com/mauricio071/Sistema-de-chamada
 ```
+
+### 2. Abra o projeto no Android Studio:
+
+Importe o projeto no Android Studio.
+
+### 3. Execute o projeto:
+
+Conecte um dispositivo Android ou use um emulador e execute a aplicação diretamente pela IDE.
