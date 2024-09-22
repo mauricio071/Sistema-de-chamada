@@ -8,7 +8,6 @@
 Esta é uma aplicação mobile desenvolvida para controle de presença em aulas. Após o login com RA e senha, o aplicativo exibe informações do aluno, como nome, RA e localização atual. A partir desses dados, a aplicação verifica se há uma aula no horário e local corretos e, caso positivo, permite o registro da presença.
 
 ## 🛠 Tecnologias utilizadas
-Tecnologias utilizadas neste projeto incluem:
 
 -   **Android** - Sistema operacional para dispositivos móveis
 -   **Kotlin** - Linguagem de programação para o desenvolvimento Android
