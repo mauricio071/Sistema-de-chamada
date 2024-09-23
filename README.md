@@ -14,7 +14,8 @@ Esta é uma aplicação mobile desenvolvida para controle de presença em aulas.
 -   **Sqlite** - Banco de dados local leve para armazenar informações no dispositivo
   
 ## 🖥️ Como configurar o projeto
-Siga os passos abaixo para configurar e executar o projeto em seu ambiente local:
+
+Siga os passos abaixo para instalar e executar o projeto em seu ambiente local:
 
 ### 1. Clone o repositório:
 
