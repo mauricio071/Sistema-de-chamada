@@ -1,6 +1,5 @@
 <div align="center"> <h1>Sistema de Chamada</h1> </div>
 
-
 ![Preview-Screens](https://github.com/mauricio071/sistema-de-chamada/blob/master/sistema-chamada.png)
 
 ## 📝 Sobre o projeto
