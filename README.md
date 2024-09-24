@@ -1,5 +1,11 @@
 <div align="center"> <h1>Sistema de Chamada</h1> </div>
 
+<p align="center">
+  <img alt="Github Top Language" src="https://img.shields.io/github/languages/top/mauricio071/Sistema-de-chamada?color=00bfa6">
+  <img width="1" />
+  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/mauricio071/Sistema-de-chamada?color=00bfa6">
+</p>
+
 ![Preview-Screens](https://github.com/mauricio071/sistema-de-chamada/blob/master/sistema-chamada.png)
 
 ## 📝 Sobre o projeto
